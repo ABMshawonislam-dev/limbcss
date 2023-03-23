@@ -1,5 +1,8 @@
 let navbar = (theme) => {
   return {
+    a: {
+      cursor: theme("cursor.pointer"),
+    },
     ".navbar": {
       padding: theme("padding.2"),
       position: "relative   ",
@@ -14,6 +17,30 @@ let navbar = (theme) => {
         columnGap: "15px",
       },
     },
+    ".dropdown-container-dekstop": {
+      position: "relative",
+      "&:hover .dropdown": {
+        opacity: theme("opacity.100"),
+        visibility: "visible",
+      },
+    },
+
+    ".dropdown": {
+      position: "absolute",
+      top: theme("top.full"),
+      left: theme("left.0"),
+      minWidth: theme("minWidth.max"),
+      padding: theme("padding.5"),
+      borderRadius: theme("borderRadius.md"),
+      boxShadow: theme("boxShadow.md"),
+      opacity: theme("opacity.0"),
+      visibility: "hidden",
+      transition: theme("transitionDuration.300"),
+    },
+    ".dropdown-container-mobile:focus .dropdown": {
+      opacity: theme("opacity.100"),
+      visibility: "visible",
+    },
     ".navbar-desktop": {
       width: theme("width.full"),
       display: "flex",
@@ -26,8 +53,8 @@ let navbar = (theme) => {
     },
     ".toggle-btn-responsive": {
       position: "absolute",
-      top: "0",
-      right: "10px",
+      top: "-8px",
+      right: "0",
       fontSize: theme("fontSize.2xl"),
     },
     ".navbar-responsive": {
