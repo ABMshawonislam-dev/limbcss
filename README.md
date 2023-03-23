@@ -20,6 +20,12 @@ module.exports = {
 
 ---
 
+if you want dropdown on hover in large device and click on mobile device, add `dropdown-container-mobile lg:dropdown-container-dekstop` on dropdown container
+
+if you want dropdown on hover in both large and mobile device, add `dropdown-container-dekstop` on dropdown container
+
+then add `dropdown` on dropdown items container
+
 ```
 <nav className="bg-slate-200 navbar">
   <div className="container mx-auto lg:navbar-container relative">
