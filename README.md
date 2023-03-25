@@ -76,3 +76,35 @@ then add `dropdown` on dropdown items container
   </div>
 </nav>
 ```
+
+# Dropdown
+
+---
+
+if you want dropdown on hover in large device and click on mobile device, add `dropdown-container-mobile lg:dropdown-container-dekstop` on dropdown container
+
+if you want dropdown on hover in both large and mobile device, add `dropdown-container-dekstop` on dropdown container
+
+then add `dropdown` on dropdown items container
+
+```
+<button
+  tabIndex={0}
+  className="b-btn b-btn-primary dropdown-container-mobile"
+>
+  Dropdown
+    <div className="dropdown bg-slate-200 text-black">
+      <ol>
+        <li>
+          <a>Drop One</a>
+        </li>
+        <li>
+          <a>Drop Two</a>
+        </li>
+        <li>
+          <a>Drop Three</a>
+        </li>
+      </ol>
+    </div>
+</button>
+```

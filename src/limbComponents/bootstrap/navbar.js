@@ -19,16 +19,22 @@ let navbar = (theme) => {
     },
     ".dropdown-container-dekstop": {
       position: "relative",
+      cursor: theme("cursor.pointer"),
       "&:hover .dropdown": {
         opacity: theme("opacity.100"),
         visibility: "visible",
       },
     },
 
+    ".dropdown-container-mobile": {
+      position: "relative",
+      cursor: theme("cursor.pointer"),
+    },
+
     ".dropdown": {
       position: "absolute",
-      top: theme("top.full"),
-      left: theme("left.0"),
+      top: "100%",
+      left: "0",
       minWidth: theme("minWidth.max"),
       padding: theme("padding.5"),
       borderRadius: theme("borderRadius.md"),
@@ -36,7 +42,9 @@ let navbar = (theme) => {
       opacity: theme("opacity.0"),
       visibility: "hidden",
       transition: theme("transitionDuration.300"),
+      textAlign: "left",
     },
+
     ".dropdown-container-mobile:focus .dropdown": {
       opacity: theme("opacity.100"),
       visibility: "visible",
