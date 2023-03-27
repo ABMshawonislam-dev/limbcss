@@ -108,3 +108,76 @@ then add `dropdown` on dropdown items container
     </div>
 </button>
 ```
+
+# Mansory Layout
+
+---
+
+If you want to change layout just change `columns` on parent div
+
+```
+<div className="columns-2 md:columns-3 lg:columns-3">
+        <div className="mb-4">
+          <img
+            class="w-full rounded-md mb-4"
+            src="https://source.unsplash.com/random/18"
+          />
+        </div>
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/2"
+        />
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/4"
+        />
+        <div className="mb-4">
+          <img
+            class="w-full rounded-md mb-4"
+            src="https://source.unsplash.com/random/34"
+          />
+        </div>
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/15"
+        />
+        <div className="h-96 bg-purple-500 mb-4">
+          <h1 className="text-center p-5 text-2xl font-bold">
+            You can write anything here
+          </h1>
+        </div>
+        <div className="h-96 bg-green-500 mb-4">
+          <h1 className="text-center pt-5 text-2xl font-bold">
+            You can design whatever you want
+          </h1>
+        </div>
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/45"
+        />
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/43"
+        />
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/20"
+        />
+        <div className="h-96 bg-blue-500 mb-4">
+          <h1 className="text-center p-5 text-2xl font-bold">
+            You can make any animation here
+          </h1>
+        </div>
+        <img
+          class="w-full rounded-md mb-4"
+          src="https://source.unsplash.com/random/22"
+        />
+        <div className="h-96 bg-purple-500 mb-4">
+          <img
+            class="w-full rounded-md mb-4"
+            src="https://source.unsplash.com/random/53"
+          />
+        </div>
+      </div>
+
+```
